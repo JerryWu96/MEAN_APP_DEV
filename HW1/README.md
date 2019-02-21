@@ -1,15 +1,34 @@
-GET:  http://localhost:3000/hw1.
+The first homwork mainly focuses on basic environment setup for Express using WebStorm.
 
-POST: The key for my code is input. Select POST, Body, x-www-form-urlencoded.
+Express
 
-In the KEY field, type: 'input', and value as you wish. For example, 'Foo'
+Middleware
 
-Press Send, and you will receive a JSON file as below:
+## HTTP Requests
+
+There are two types of HTTP requests that I practiced: <b>GET</b> and <b>POST</b>. 
+
+## Express
+As the middleware running on the server side, it serves as a listner and respond to HTTP requests.
+In this assignment, i wrote a simple router file: routes/myRouter.js. It will respond to both HTTP requests.
+
+## Postman
+
+By using Postman, it's simpler to simulate a client machine and send coded urls to the localhost server.
+
+GET:  simply visit http://localhost:3000/hw1. You will see the following JSON format:
 
 {
-	"input" : "Foo"
+    "Name": "Xiankang Wu"
 }
 
-I created a router file: ./route/myRouter.js
+POST: The key for my code is 'input'. 
 
-Modified: app.js
+By selecting POST- Body -  x-www-form-urlencoded, the router will get the parameter from the request body rather than the URL
+string.
+
+Then type in a VALUE could be anything. For example, if you type in Foo, and press 'Send', the respond should be:"
+
+{
+    "input": "Foo"
+}
