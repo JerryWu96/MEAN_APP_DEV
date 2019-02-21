@@ -1,9 +1,5 @@
 The first homwork mainly focuses on basic environment setup for Express using WebStorm.
 
-Express
-
-Middleware
-
 ## HTTP Requests
 
 There are two types of HTTP requests that I practiced: <b>GET</b> and <b>POST</b>. 
@@ -19,7 +15,9 @@ By using Postman, it's simpler to simulate a client machine and send coded urls 
 GET:  simply visit http://localhost:3000/hw1. You will see the following JSON format:
 
 {
+
     "Name": "Xiankang Wu"
+    
 }
 
 POST: The key for my code is 'input'. 
@@ -30,5 +28,7 @@ string.
 Then type in a VALUE could be anything. For example, if you type in Foo, and press 'Send', the respond should be:"
 
 {
+
     "input": "Foo"
+    
 }
