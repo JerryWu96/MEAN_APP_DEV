@@ -4,12 +4,15 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
+//let indexRouter = require('./routes/index');
+//let usersRouter = require('./routes/users');
 let myRouter = require('./routes/myRouter'); // User-defined js under routes for hw1.
 let app = express();
 
 // view engine setup
+// express use views to find templates
+// __dirname: current directory
+// express use internal variable views
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -17,10 +20,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));// a variable: static, go looking __dirname(HW1 here)/public
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/', indexRouter);
+//app.use('/users', usersRouter);
+
 app.use('/', myRouter);// User-defined js under routes for hw1.
 
 
