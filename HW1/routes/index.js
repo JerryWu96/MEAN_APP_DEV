@@ -10,3 +10,7 @@ let router = express.Router();
 router.get('/hw1', (req, res) => res.json({"foo": "bar"}));
 
 module.exports = router;
+
+router.get('/clog', function(req, res, next) {
+    res.render('index', { title: 'CS412'});
+});
