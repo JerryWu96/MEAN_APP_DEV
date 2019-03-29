@@ -5,7 +5,8 @@ The first homwork mainly focuses on basic environment setup for Express using We
 There are two types of HTTP requests that I practiced: <b>GET</b> and <b>POST</b>. 
 
 ## Express
-As the middleware running on the server side, it serves as a listner and respond to HTTP requests.
+
+As the middleware running on the server side, it serves as a listener and respond to HTTP requests.
 In this assignment, i wrote a simple router file: routes/myRouter.js. It will respond to both HTTP requests.
 
 ## Postman
@@ -16,8 +17,10 @@ GET:  simply visit http://localhost:3000/hw1. You will see the following JSON fo
 
 {
 
-    "Name": "Xiankang Wu"
-    
+```
+"Name": "Xiankang Wu"
+```
+
 }
 
 POST: The key for my code is 'input'. 
@@ -29,7 +32,9 @@ Then type in a VALUE could be anything. For example, if you type in Foo, and pre
 
 {
 
-    "input": "Foo"
-    
+```
+"input": "Foo"
+```
+
 }
 

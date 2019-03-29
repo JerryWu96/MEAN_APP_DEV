@@ -8,10 +8,10 @@ I am mainly a backend guy, but I am also interested in the most popular web deve
 
 This repo contians all the course work I did! 
 
-Check each individual folder for its discription!
+Check each individual folder for its discription.
 
 ## Credits
 
-Boston University Department of Computer Science, CS591 D1, Professor Betke
+Boston University Department of Computer Science, CS591 D1, Professor Perry Donham
 
 This repo was created by Xiankang (Jerry) Wu. 
