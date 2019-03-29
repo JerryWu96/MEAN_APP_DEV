@@ -6,7 +6,7 @@ I used New York Times Books API to retrieve the best seller list. Only the top 3
 
 For obvious reasons, the key is stored in a file that I listed in the .gitignore: config.js. 
 
-It has a funciton, which is called to use append THE KEY to the end of the url.
+It is a module, which is used to get my API key and then I appendED THE KEY to the end of the url required to send to NYTimes server.
 
 ```
 module.exports = {
