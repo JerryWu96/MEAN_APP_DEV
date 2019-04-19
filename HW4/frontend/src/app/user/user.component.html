@@ -1,0 +1,19 @@
+<h2>User Information</h2>
+
+<div *ngFor="let user of users">
+  <label>Name </label>
+  <input [(ngModel)]="user.name">&nbsp;
+  <label>Favorite book </label>
+  <input [(ngModel)]="user.favorite">
+</div>
+
+<h3>Add new user</h3>
+<div>
+  <label>Name </label>
+  <input [(ngModel)]="newUser.name">&nbsp;
+  <label>Favorite book </label>
+  <input [(ngModel)]="newUser.favorite">
+  <br>
+
+  <button (click)="onSubmit()">Submit</button>
+</div>
